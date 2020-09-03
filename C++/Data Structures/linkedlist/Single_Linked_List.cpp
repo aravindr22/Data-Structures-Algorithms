@@ -22,6 +22,20 @@ void insertAtBeg(int x){
 	}
 }
 
+void insertAtEnd(int x){
+	struct node *temp;
+	struct node *curr;
+	temp = new struct node;
+	temp->data=x;
+	temp->next=NULL;
+	if(head==NULL){
+		head=temp;
+	} else {
+		for(curr=head;curr->next!=NULL;curr=curr->next);
+		curr->next=temp;
+	}
+}
+
 void display(){
 	struct node *temp;
 	temp = head;
@@ -36,6 +50,7 @@ int main(){
 	
 	for(int i=0;i<=10;i++){
 		insertAtBeg(i);
+		insertAtEnd(i);
 	}
 	display();
 }
