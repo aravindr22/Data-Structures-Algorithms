@@ -1,3 +1,8 @@
+#------------Bubble Sort complexity----------------
+# Best Case - O(n)
+# Average Case - O(n^2)
+# Worst Case - O(n^2)
+
 def Bubble_sort(array):
     
     array_length = len(array)
