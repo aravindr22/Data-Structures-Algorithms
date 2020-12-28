@@ -1,2 +1,6 @@
 # Data-Structures-Algorithms
-update from aravind <br />
+update from artest <br />
+update from ar
+ashok 
+abhinesh 
+barath
