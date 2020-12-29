@@ -19,7 +19,7 @@ void search(int arr[],int n, int k)
         int mid=(l+r)/2;		//Middle index is found each time while loop starts
         if(k==arr[mid])         //If the middle element is the key it is printed
         {
-            cout<<"found at"<<mid;
+            cout<<"Found at: "<<mid;
             break;
         }
         if(k>arr[mid])      	//If the key is grater then left index is changed
@@ -37,14 +37,14 @@ void search(int arr[],int n, int k)
 int main()
 {
     int arr[100],n;
-    cout<<"enter the number of elements:";  // No. of elements is received 
+    cout<<"Enter the number of elements: ";  // No. of elements is received 
     cin>>n;
     for(int i=0;i<n;i++)
     {
         cin>>arr[i];				        //Array elemets are received
     }
     int k;
-    cout<<"enter the key value";		    //key value is received
+    cout<<"Enter the key value: ";		    //key value is received
     cin>>k;
     search(arr,n,k);		                //function is called
     return 0;
