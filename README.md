@@ -17,7 +17,7 @@
             <td align="center"><a href="https://github.com/ashok-02"><img width="64" src="https://avatars3.githubusercontent.com/u/56188487" alt="f"></a></td>
         </tr>
         <tr>
-            <td align="center"> :construction::pencil: </td>
+            <td align="center"> :hammer::construction::pencil: </td>
             <td align="center"> :pencil: </td>
             <td align="center"> :pencil: </td>
         </tr>
