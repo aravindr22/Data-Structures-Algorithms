@@ -9,6 +9,7 @@
 // Average Case - O(nlogn)   |--> With a condition partially sorted  
 // Worst Case - O(nlogn)     |
 
+// Space Complexity - O(1)
 
 
 function bubbleSort(arr){

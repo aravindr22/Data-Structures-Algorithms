@@ -3,6 +3,8 @@
 # Average Case - O(n^2)
 # Worst Case - O(n^2)
 
+# Space Complexity - O(1)
+
 def insertion_Sort(array):
     # Traverse through 1 to len(arr) 
     for i in range(1, len(array)): 
