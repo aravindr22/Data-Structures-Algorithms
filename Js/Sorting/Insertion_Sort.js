@@ -3,6 +3,8 @@
 // Average Case - O(n^2)
 // Worst Case - O(n^2)
 
+// Space Complexity - O(1)
+
 
 function insertion_sort(array){
     var i,j,currentVal,array_length = array.length;

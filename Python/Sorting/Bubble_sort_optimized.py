@@ -9,6 +9,8 @@
 # Average Case - O(nlogn)   |--> With a condition partially sorted  
 # Worst Case - O(nlogn)     |
 
+# Space Complexity - O(1)
+
 def Bubble_sort_optimized(array):
     
     array_length = len(array)

@@ -3,6 +3,8 @@
 # Average Case - O(n^2)
 # Worst Case - O(n^2)
 
+# Space Complexity - O(1)
+
 def Bubble_sort(array):
     
     array_length = len(array)
