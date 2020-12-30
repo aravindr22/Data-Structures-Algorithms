@@ -1,10 +1,10 @@
+//------------Bubble Sort complexity----------------
+// Best Case - O(n)
+// Average Case - O(n^2)
+// Worst Case - O(n^2)
+
 #include<iostream>
-
 using namespace std;
-
-//Best Case - O(n)
-//Average Case - O(n^2)
-//Worst Case - O(n^2)
 
 void bubble_sort(int arr[], int array_size)
 {
@@ -15,6 +15,9 @@ void bubble_sort(int arr[], int array_size)
 
     for(i=0;i<array_size-1;i++)
     {
+        
+        //The minus i is added here because after each pass greatest element will sorted and placed at last
+        //So there is no need of checking again so we eleminate out to minimize the time complexity
         for(j=0;j<array_size-i-1;j++)
         {
             if(arr[j]>arr[j+1])                 // To sort in descending order, change > to < in this line.
