@@ -3,8 +3,8 @@
 using namespace std;
 
 //Best Case - O(n)
-//Average Case - O(n*n)
-//Worst Case - O(n*n)
+//Average Case - O(n^2)
+//Worst Case - O(n^2)
 
 void bubble_sort(int arr[], int array_size)
 {
