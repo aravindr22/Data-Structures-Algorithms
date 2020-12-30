@@ -1,36 +1,28 @@
+#include<iostream>
+using namespace std;
 // Best Case - O(1)
 // Average Case - O(n)
 // Worst Case - O(n)
 
-#include<iostream>
-using namespace std;
-
-void search(int arr[],int n,int k)
+int search(int arr[],int arrSize,int key)
 {
-
-    //loop is runned to find the element linearily
-    for(int i=0;i<n;i++)
+    for(int i=0;i<arrSize;i++)
     {
-        if(arr[i]==k)	
+        if(arr[i]==key)	//loop is runned to find the element linearily
         {
-            cout<<"the index is found at "<<i;   // the index is printed
+            return i;   // the index is returnd
         }
     }
+    return -1;
     
 
 }
 int main()
 {
-    int arr[100],n;
-    cout<<"enter the number of elements:";
-    cin>>n;                                     //number of elements are received
-    for(int i=0;i<n;i++)
-    {
-        cin>>arr[i];	                        //array elements are received
-    }
-    int k;
-    cout<<"enter the key value";
-    cin>>k;                         			//key value is received
-    search(arr,n,k);	                        //function is called	
+    int arr[10]={4,5,3,4,7,2,9,1,3,4};
+    int arrSize = sizeof(arr)/sizeof(arr[0]);    //to find array length
+    int key=1;      //key value is fixes(the element we want to search)
+    int index=search(arr,arrSize,key);	//function is called and the return value is stored in index
+    cout<<index;
     return 0;
 }

@@ -1,53 +1,84 @@
-// In binary search the elements shouls be in sorted order
+#include <iostream>
+
+using namespace std;
 // Best Case - O(1)
 // Average Case - O(nlogn)
 // Worst Case - O(nlogn)
 
-#include <iostream>
-using namespace std;
-
-
-void search(int arr[],int n, int k)
+int search(int arr[],int arrSize, int key)
 {
-    int l=0;		
-    int r=n-1;		            //The end index is initialised
-    
-    //the while loop is runned till the condition become false 			
-    //ie) to find the element
-    while(l<=r)
+    int left=0;     
+    int right=arrSize-1;        //the end index is initialised
+    while(left<=right)//the while loop is runned till the condition become false            //ie) to find the element
     {
-        int mid=(l+r)/2;		//Middle index is found each time while loop starts
-        if(k==arr[mid])         //If the middle element is the key it is printed
+        int mid=(left+right)/2;     //middle index is found
+        if(key==arr[mid])  //if the middle element is the key it is printed
         {
-            cout<<"Found at: "<<mid;
+            return mid;
             break;
         }
-        if(k>arr[mid])      	//If the key is grater then left index is changed
+        if(key>arr[mid])    // if the key is grater then left index is changed
         {
-            l=mid+1;
+            left=mid+1;
         }
-          if(k<arr[mid])        //If key is lesser the the right index is changed
+        if(key<arr[mid])//if key is lesser the the right index is changed
         {
-            r=mid-1;
+            right=mid-1;
         }
     }
+    return -1;
      
 }
 
+
 int main()
 {
-    int arr[100],n;
-    cout<<"Enter the number of elements: ";  // No. of elements is received 
-    cin>>n;
-    for(int i=0;i<n;i++)
-    {
-        cin>>arr[i];				        //Array elemets are received
-    }
-    int k;
-    cout<<"Enter the key value: ";		    //key value is received
-    cin>>k;
-    search(arr,n,k);		                //function is called
+    int arr[10]={1,2,3,4,5,6,7,8,9,10};
+    int arrSize = sizeof(arr)/sizeof(arr[0]);    //to find array length
+    int key=7;      //key value is fixes(the element we want to search)
+    int index=search(arr,arrSize,key);  //function is called and the return value is stored in index
+    cout<<index;
     return 0;
+}
+#include <iostream>
+
+using namespace std;
+// Best Case - O(1)
+// Average Case - O(nlogn)
+// Worst Case - O(nlogn)
+
+int search(int arr[],int arrSize, int key)
+{
+    int left=0;     
+    int right=arrSize-1;        //the end index is initialised
+    while(left<=right)//the while loop is runned till the condition become false            //ie) to find the element
+    {
+        int mid=(left+right)/2;     //middle index is found
+        if(key==arr[mid])  //if the middle element is the key it is printed
+        {
+            return mid;
+            break;
+        }
+        if(key>arr[mid])    // if the key is grater then left index is changed
+        {
+            left=mid+1;
+        }
+        if(key<arr[mid])//if key is lesser the the right index is changed
+        {
+            right=mid-1;
+        }
+    }
+    return -1;
+     
 }
 
 
+int main()
+{
+    int arr[10]={1,2,3,4,5,6,7,8,9,10};
+    int arrSize = sizeof(arr)/sizeof(arr[0]);    //to find array length
+    int key=7;      //key value is fixes(the element we want to search)
+    int index=search(arr,arrSize,key);  //function is called and the return value is stored in index
+    cout<<index;
+    return 0;
+}
