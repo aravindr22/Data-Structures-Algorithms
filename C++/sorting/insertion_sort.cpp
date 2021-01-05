@@ -34,7 +34,7 @@ void print_array(int arr[], int array_size) // to print the array when called
 {
     for(int i=0;i<array_size;i++)
     {
-        cout<<arr[i];
+        cout<<arr[i]<<" ";
     }
 }
 
