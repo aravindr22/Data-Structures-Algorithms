@@ -19,10 +19,10 @@ void bubbleSort(int arr[], int n)
 	    { 
 		    if (arr[j] > arr[j+1]) 
 		    { 
-                temp=arr[j];                    // swap if greater is at the rear position.
-                arr[j]=arr[j+1];
-                arr[j+1]=temp;
-		        swapped = true; 
+               	    temp=arr[j];                    // swap if greater is at the rear position.
+                    arr[j]=arr[j+1];
+                    arr[j+1]=temp;
+		    swapped = true; 
 		    } 
 	    } 
 
@@ -37,7 +37,7 @@ void printArray(int arr[], int size)
 { 
 	int i; 
 	for (i=0; i < size; i++) 
-		cout<<arr[i]; 
+		cout<<arr[i]<<" "; 
 	cout<<endl; 
 } 
 
