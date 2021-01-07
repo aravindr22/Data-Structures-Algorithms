@@ -1,4 +1,17 @@
-// Optimized implementation of Bubble sort 
+//--------------------Bubble Sort Optimized----------------------
+//*****************************************************************************************
+//-------------It is a optimal solution only if the array is partially sorted-----------------
+//-------------------------Detailed Explanation is given below--------------------------
+//*****************************************************************************************
+
+//------------Bubble Sort Optimized complexity----------------
+// Best Case - O(n)          |
+// Average Case - O(nlogn)   |--> With a condition partially sorted  
+// Worst Case - O(nlogn)     |
+
+// Space Complexity - O(1)
+
+
 #include <iostream> 
 using namespace std;
 
