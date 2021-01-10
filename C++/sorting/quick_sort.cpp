@@ -1,4 +1,11 @@
- #include<iostream>
+//------------Quick Sort Time and Space complexity----------------
+// Best Case - O(nlogn)
+// Average Case - O(nlogn)
+// Worst Case - O(n^2)
+        
+// Space Complexity - O(logn) 
+
+#include<iostream>
  using namespace std;
 //function which is used to swap two elements 
 void swap(int* a, int* b) 
@@ -41,7 +48,7 @@ void printArray(int arr[], int size)
 { 
     int i; 
     for (i=0; i < size; i++) 
-        cout<<arr[i];
+        cout<<arr[i]<<" ";
     
 } 
   
