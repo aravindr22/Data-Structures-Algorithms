@@ -77,7 +77,7 @@ int main()
 	int arr[n];
 	for(int i=0;i<n;i++)
 	{
-		cout<<"Enter element:";
+		cout<<"Enter element: ";
 		cin>>arr[i];    //array elemenmts are received
 	}
 	mergesort(arr,0,n-1);   //sorting function is called(first divide function)
