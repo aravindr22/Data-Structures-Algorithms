@@ -1,6 +1,6 @@
 # Data-Structures-Algorithms
 
-# Time Complexity Chart
+# Time Complexity or Big O Chart
 <img src="https://miro.medium.com/max/2928/1*5ZLci3SuR0zM_QlZOADv8Q.jpeg"/><br />
 
 # Contributors & Mainteners
