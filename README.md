@@ -1,10 +1,9 @@
 # Data-Structures-Algorithms
 
+# Time Complexity Chart
+<img src="https://miro.medium.com/max/2928/1*5ZLci3SuR0zM_QlZOADv8Q.jpeg"/><br />
+
 # Contributors & Mainteners
-
-<h1>Time Complexity Chart</h1>
-<img src="https://miro.medium.com/max/2928/1*5ZLci3SuR0zM_QlZOADv8Q.jpeg"/>
-
 <table>
     <thead>
         <tr>
