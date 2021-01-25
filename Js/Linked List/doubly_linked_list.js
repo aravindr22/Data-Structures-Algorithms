@@ -1,3 +1,9 @@
+//---------------------------------Single Linked List Time Complexity------------------------------------
+//  Insertion - O(1)
+//  Removal   - O(1)
+//  Searching - O(n)    Technically it is O(n/2) but still we consider as O(n)
+//  Access    - O(n)
+
 // piece of data - val
 // reference to next node - next
 // reference to Prev node - prev
