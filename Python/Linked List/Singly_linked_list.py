@@ -105,14 +105,14 @@ class singlyLinkedList():
         if Pos < 0 or Pos > self.length:
             return False
         if Pos == 0:
-            return not not self.shift()
+            return self.shift()
         if Pos == self.length-1:
-            return not not self.pop()
+            return self.pop()
         prevNode = self.get(Pos-1)
         nextNode = prevNode.next
         prevNode.next = nextNode.next
         self.length -= 1
-        return True
+        return nextNode
 
     #Reverse is a function used to reverse a linked list
     def reverse(self):
