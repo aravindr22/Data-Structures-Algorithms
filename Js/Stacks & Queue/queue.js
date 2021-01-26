@@ -24,7 +24,7 @@ class Queue{
             this.first = this.last = newNode;            //If head is empty and tail are empty the new node is inserted here
         } else {
             this.last.next = newNode;
-            this.last = newNode;                 //OR else new value is attached to tail and new tail is assigned
+            this.last = newNode;                         //OR else new value is attached to tail and new tail is assigned
         }        
         return ++this.size;
     }
