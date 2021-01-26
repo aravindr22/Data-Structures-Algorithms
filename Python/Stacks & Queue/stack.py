@@ -35,17 +35,8 @@ class Stack():
         self.size -= 1     
         return current.val
 
-    def printList(self):
-        arr = []
-        currentNode = self.first
-        while currentNode:
-            arr.append(currentNode.val)
-            currentNode = currentNode.next
-        print(arr)
-
 stack = Stack()
 print(stack.push(5))
 print(stack.push(55))
 print(stack.push(555))
-stack.printList()
 print(stack.pop())
