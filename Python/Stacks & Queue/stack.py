@@ -1,3 +1,9 @@
+#---------------------------------Stack Time Complexity------------------------------------
+#  Insertion - O(1)
+#  Removal   - O(1)
+#  Searching - O(n)
+#  Access    - O(n)
+
 class Node():
     def __init__(self,val):
         self.val = val
