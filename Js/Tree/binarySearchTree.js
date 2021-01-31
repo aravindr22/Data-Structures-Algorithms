@@ -55,13 +55,67 @@ class BinarySearchTree{
         }
         return current;
     }
+
+    //BFS - Breadth First Search
+    BFS(){
+        var node = this.root,
+            queue = [],
+            data = [];
+        queue.push(node)
+        while(queue.length){
+            node = queue.shift();
+            data.push(node.val);
+            if(node.left) queue.push(node.left);
+            if(node.right) queue.push(node.right);
+        }
+        return data;
+    }
+
+    //DFS - Depth First Search (PreOrder method)
+    DFS_preOrder(){
+        var data = [];
+
+        function traverse(node){
+            data.push(node.val);
+            if(node.left) traverse(node.left)
+            if(node.right) traverse(node.right)
+        }
+        traverse(this.root)
+        return data;
+    }
+    
+    //DFS - Depth First Search (PostOrder method)
+    DFS_postOrder(){
+        var data = [];
+
+        function traverse(node){
+            if(node.left) traverse(node.left)
+            if(node.right) traverse(node.right)
+            data.push(node.val);
+        }
+        traverse(this.root)
+        return data;
+    }
+    
+    //DFS - Depth First Search (InOrder method)
+    DFS_inOrder(){
+        var data = [];
+
+        function traverse(node){
+            if(node.left) traverse(node.left)
+            data.push(node.val);
+            if(node.right) traverse(node.right)
+        }
+        traverse(this.root)
+        return data;
+    }
 }
 
 var tree = new BinarySearchTree()
-console.log(tree.insert(10))
-console.log(tree.insert(5))
-console.log(tree.insert(15))
-console.log(tree.insert(25))
-console.log(tree.insert(11))
-console.log(tree.find(25))
-console.log(tree.find(15))
+tree.insert(10)
+tree.insert(6)
+tree.insert(15)
+tree.insert(20)
+tree.insert(3)
+tree.insert(8)
+console.log(tree.DFS_inOrder())
