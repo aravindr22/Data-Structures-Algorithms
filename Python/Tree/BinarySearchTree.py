@@ -41,10 +41,73 @@ class BinarySearchTree:
                 return current
         return False
 
+    #BFS - Breadth First Search
+    def BFS(self):
+        data = []
+        queue = []
+        node = self.root
+        queue.append(node)
+
+        while len(queue):
+            node = queue.pop(0)
+            data.append(node.val)
+            
+            if node.left:
+                queue.append(node.left)
+            if node.right:
+                queue.append(node.right) 
+        
+        return data
+
+    #DFS - Depth First Search (PreOrder method)
+    def DFS_preOrder(self):
+        data = []
+
+        def traverse(node):
+            data.append(node.val)
+            if node.left:
+                traverse(node.left)
+            if node.right:
+                traverse(node.right)
+        
+        traverse(self.root)
+        return data
+
+    #DFS - Depth First Search (PostOrder method)
+    def DFS_postOrder(self):
+        data = []
+
+        def traverse(node):
+            if node.left:
+                traverse(node.left)
+            if node.right:
+                traverse(node.right)
+            data.append(node.val)
+        
+        traverse(self.root)
+        return data
+
+    #DFS - Depth First Search (InOrder method)
+    def DFS_InOrder(self):
+        data = []
+
+        def traverse(node):
+            if node.left:
+                traverse(node.left)
+            data.append(node.val)
+            if node.right:
+                traverse(node.right)
+        
+        traverse(self.root)
+        return data
 
 BST = BinarySearchTree()
-print(BST.insert(10).root.val)
-print(BST.insert(5))
-print(BST.insert(15))
-print(BST.insert(1))
-print(BST.find(5).val)
+BST.insert(10)
+BST.insert(5)
+BST.insert(15)
+BST.insert(1)
+BST.insert(3)
+BST.insert(30)
+print(BST.DFS_postOrder())
+print(BST.DFS_InOrder())
+
