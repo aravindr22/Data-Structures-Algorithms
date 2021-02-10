@@ -1,3 +1,8 @@
+#---------------------------------Binary Heap Time Complexity------------------------------------
+#  Insertion - O(logn)
+#  Removal   - O(logn)
+#  Searching - O(n)    
+
 import math
 
 class MaxBinaryHeap:

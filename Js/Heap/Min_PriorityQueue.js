@@ -1,3 +1,11 @@
+//---------------------------------Priority Queue Time Complexity------------------------------------
+//  Insertion - O(logn)
+//  Removal   - O(logn)
+//  Searching - O(n)    
+
+// piece of data - val
+// priority of data - priority
+
 class Node{
     constructor(val, priority){
         this.val = val;
